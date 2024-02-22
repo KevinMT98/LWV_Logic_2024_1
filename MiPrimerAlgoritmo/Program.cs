@@ -9,15 +9,15 @@ public class Program
         double suma, rest, prod, coc, exp1, exp2;
 
         //leer num 1
-        Console.Write("Ingrese el primero numero ");
+        Console.Write("Ingrese el primero numero: ");
         num1 = Convert.ToInt32(Console.ReadLine()); //todo lo que ingrese en esta linea sera tomado como un string
         Console.WriteLine();
         //ler num 2
-        Console.Write("Ingrese el primero numero. este numero debe ser diferente de cero ");
+        Console.Write("Ingrese el primero numero. este numero debe ser diferente de cero: ");
         num2 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
         //Leer exponente
-        Console.Write("Ingrese exponente ");
+        Console.Write("Ingrese exponente: ");
         num3 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
         // hacer calculos
@@ -29,11 +29,11 @@ public class Program
         exp2 = Math.Pow(num2, num3);
 
         // imprimer en pantalla
-        Console.WriteLine("La suma de: " + num1 + " + " + num2 + " = " + suma); // 1ra forma de concatenar texto
-        Console.WriteLine("La resta de: " + num1 + " - " + num2 + " = " + rest);
+        Console.WriteLine("La suma de..........: " + num1 + " + " + num2 + " = " + suma); // 1ra forma de concatenar texto
+        Console.WriteLine("La resta de.........: " + num1 + " - " + num2 + " = " + rest);
         Console.WriteLine("La multiplicacion de: " + num1 + " * " + num2 + " = " + prod);
-        Console.WriteLine("La division de: " + num1 + " / " + num2 + " = " + coc);
-        Console.WriteLine("La potencia de: " + num1 + " Elevado a la " + num3 + " = " + exp1);
-        Console.WriteLine("La potencia de: " + num2 + " Elevado a la " + num3 + " = " + exp2);
+        Console.WriteLine("La division de......: " + num1 + " / " + num2 + " = " + coc);
+        Console.WriteLine("La potencia de......: " + num1 + " Elevado a la " + num3 + " = " + exp1);
+        Console.WriteLine("La potencia de......: " + num2 + " Elevado a la " + num3 + " = " + exp2);
     }
 }
