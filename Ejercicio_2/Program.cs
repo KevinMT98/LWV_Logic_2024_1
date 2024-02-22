@@ -3,22 +3,68 @@
     static void Main(string[] args)
     {
         //Declaracion de variables
-        double num1, num2, num3;
+        double num1=0, num2=0, num3=0;
         double cua, root2, root3;
-      
-
+        string aux;
+        bool error = true;
         //leer num 1
-        Console.Write("Ingrese el primero numero: ");
-        num1 = Convert.ToInt32(Console.ReadLine());
+        //do while para garantizar que solo sean valores numericos
+        while (error)
+        {
+            try
+            {
+                Console.Write("Ingrese el primero numero: ");
+                aux = Console.ReadLine();
+                num1 = Convert.ToInt32(aux);
+                Console.WriteLine();
+                
+
+                error = false;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Solo debe ingresar valores numerico: ");
+                error = true;
+            }
+        }
+        error = true;
+        while (error)
+        {
+
+
+            try
+            {
+                //leer num 2
+                Console.Write("Ingrese el segundo numero: ");
+                aux= Console.ReadLine();
+        num2 = Convert.ToInt32(aux);
         Console.WriteLine();
-        //leer num 2
-        Console.Write("Ingrese el segundo numero: ");
-        num2 = Convert.ToInt32(Console.ReadLine());
+                error = false;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Solo debe ingresar valores numerico: ");
+                error = true;
+            }
+        }
+        {
+            try
+            {
+
+
+                //leer num3
+                Console.Write("Ingrese el tercer numero: ");
+                aux = Console.ReadLine();
+        num3 = Convert.ToInt32(aux);
         Console.WriteLine();
-        //leer num3
-        Console.Write("Ingrese el tercer numero: ");
-        num3 = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine();
+                error = false;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Solo debe ingresar valores numerico: ");
+                error = true;
+            }
+        }
 
         cua = num1 * num1;
         root2 = Math.Sqrt(num2);
@@ -29,5 +75,6 @@
         Console.WriteLine("La raiz cuadrada de: " + num2 + " = " + root2);
         Console.WriteLine("La raiz cubica de..: " + num3 + " = " + root3);
     }
+    
 }
 
