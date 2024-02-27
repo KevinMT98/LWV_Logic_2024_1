@@ -5,7 +5,7 @@ internal class Program //condicionales - rama de condicionales ejercicio 2
 { 
     private static void Main(string[] args)
     {
-        double seg1, seg2, seg3, suma;
+        double seg1, seg2, seg3;
         string mensaje = "Se puede construir un triangulo ";
 
         // pedir datos
@@ -25,11 +25,11 @@ internal class Program //condicionales - rama de condicionales ejercicio 2
 
         if (((seg1 + seg2) > seg3) && ((seg1 + seg3) > seg2) && ((seg2 + seg3) > seg1))
         {
-            Console.WriteLine(string.Format("\n Si {0}", mensaje));
+            Console.WriteLine($"\n Si {mensaje}");
 
         }
         else
-            Console.WriteLine(string.Format("\n No {0}", mensaje));
+            Console.WriteLine($"\n No {mensaje}");
 
 
     }
