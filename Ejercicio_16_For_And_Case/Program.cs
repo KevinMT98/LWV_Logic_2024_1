@@ -11,7 +11,7 @@
             else acumuladorImpar += i;
           
         }
-        Console.WriteLine($"La suma de los pares es {acumuladorPar}");
-        Console.WriteLine($"La suma de los impares es {acumuladorImpar}");
+        Console.WriteLine($"La suma de los pares es: {acumuladorPar}");
+        Console.WriteLine($"La suma de los impares es: {acumuladorImpar}");
     }
 }
