@@ -7,8 +7,6 @@
 - Si el IMC está entre 25,0 y 29,9 entonces tiene sobrepeso
 
 - Si el IMC es mayor de 29.9 entonces tiene obesidad.*/
-using System.Runtime.Intrinsics.X86;
-
 internal class Program
 {
     private static void Main(string[] args)
@@ -65,8 +63,7 @@ internal class Program
 
             respuesta = Console.ReadLine();
         } while (respuesta.ToLower() == "s");
-
-        
+           
     }
 }
 
