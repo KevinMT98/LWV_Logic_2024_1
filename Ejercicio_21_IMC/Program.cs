@@ -23,11 +23,13 @@ internal class Program
             Console.Write("Ingrese nombre del paciente: ");
             Console.WriteLine();
             nombre = Convert.ToString(Console.ReadLine());
+            Console.WriteLine();
             while (true)
             {
                 try
                 {
                     Console.Write("Ingrese el peso del paciente: ");
+                    Console.WriteLine();
                     aux = Console.ReadLine();
                     peso = Convert.ToInt32(aux);
                     Console.WriteLine();
@@ -36,26 +38,31 @@ internal class Program
                 catch (FormatException)
                 {
                     Console.WriteLine("Solo debe ingresar valores numerico: ");
+                    Console.WriteLine();
                 }
             }
 
             Console.Write("Ingrese la altura del paciente: ");
             Console.WriteLine();
             altura = Convert.ToDouble(Console.ReadLine());
-
+            Console.WriteLine();
 
             IMC = (peso / Math.Pow(2, altura));
 
             if (IMC < 18.5)
-                Console.WriteLine($"El IMC del pacientes {nombre} es: {IMC.ToString("N4")} Y cuenta con un peso insuficiente. ");
+                Console.WriteLine($"El IMC del paciente {nombre} es: {IMC.ToString("N4")} Y cuenta con un peso insuficiente. ");
             else if (IMC >= 18.5 && IMC <= 24.9)
-                Console.WriteLine($"El IMC del pacientes {nombre} es: {IMC.ToString("N4")} Y se encuentre en la categoría de Peso Saludable. ");
+                Console.WriteLine($"El IMC del paciente {nombre} es: {IMC.ToString("N4")} Y se encuentre en la categoría de Peso Saludable. ");
             else if (IMC >= 25.5 && IMC < 29.9)
-                Console.WriteLine($"El IMC del pacientes {nombre} es: {IMC.ToString("N4")} Y cuenta con sobrepeso. ");
+                Console.WriteLine($"El IMC del paciente {nombre} es: {IMC.ToString("N4")} Y cuenta con sobrepeso. ");
             else
-                Console.WriteLine($"El IMC del pacientes {nombre} es: {IMC.ToString("N4")} Y cuenta con obesidad. ");
+                Console.WriteLine($"El IMC del paciente {nombre} es: {IMC.ToString("N4")} Y cuenta con obesidad. ");
+                Console.WriteLine();
+
 
             Console.Write("¿Desea ingresar otro paciente? (S/N): ");
+            Console.WriteLine();
+
             respuesta = Console.ReadLine();
         } while (respuesta.ToLower() == "s");
 
